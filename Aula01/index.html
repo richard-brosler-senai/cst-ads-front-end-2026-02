@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Equipamentos - Sistema Industrial</title>
+</head>
+<body>
+    <header>
+        <h1>Painel de Controle Industrial</h1>
+        <p>Sistema corporativo para gerenciamento, listagem
+            e cadastro de equipamentos operacionais.
+        </p>
+    </header>
+    <!-- Menu -->
+    <aside>
+        <nav>
+            <ul class="menu-horizontal">
+                <li>
+                    <a href="#equipamentos">Equipamentos</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Listar Todos</a></li>
+                        <li><a href="#">Em Manutenção</a></li>
+                        <li><a href="#">Ativos</a></li>
+                        <li><a href="#">Inativos</a></li>
+                        <li><a href="#">Relatório Geral</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cadastros">Cadastros</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Novo Equipamento</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Fornecedores</a></li>
+                        <li><a href="#">Localizações</a></li>
+                        <li><a href="#">Importar Lote</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sistema">Sistema</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Configurações</a></li>
+                        <li><a href="#">Logs de Acesso</a></li>
+                        <li><a href="#">Permissões</a></li>
+                        <li><a href="#">Backup de Dados</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>        
+        </nav>
+    </aside>
+    <main>
+        <section id="equipamentos">
+            <h2>Relação de Equipamentos</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID / Código</th>
+                            <th>Nome do Equipamento</th>
+                            <th>Status Atual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EQ-001</td>
+                            <td>Torno CNC Industrial</td>
+                            <td>Operacional</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-002</td>
+                            <td>Prensa Hidráulica 50T</td>
+                            <td>Em Manutenção</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-003</td>
+                            <td>Braço Robótico de Solda</td>
+                            <td>Inativo</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-004</td>
+                            <td>Empilhadeira Elétrica</td>
+                            <td>Operacional</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-005</td>
+                            <td>Esteira Transportadora A</td>
+                            <td>Operacional</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-006</td>
+                            <td>Compressor de Ar</td>
+                            <td>Operacional</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-007</td>
+                            <td>Gerador Diesel 500KVA</td>
+                            <td>Operacional</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-008</td>
+                            <td>Fresa Universal</td>
+                            <td>Inativo</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-009</td>
+                            <td>Caldeira a Vapor</td>
+                            <td>Operacional</td>
+                        </tr>
+                        <tr>
+                            <td>EQ-010</td>
+                            <td>Ponte Rolante</td>
+                            <td>Operacional</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="cadastro">
+            <h2>Cadastro de Equipamentos</h2>
+            <form id="formEquipamento">
+                <fieldset>
+                    <legend>Informações Básicas</legend>
+                    <div class="form-group">
+                        <label for="nomeEquipamento">
+                            Nome do Equipamento:
+                        </label>
+                        <input type="text" id="nomeEquipamento" 
+                        name="nomeEquipamento"
+                        placeholder="Ex: Furadeira de Bancada"
+                        required>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
