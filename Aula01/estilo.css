@@ -114,3 +114,59 @@ section h2 {
     border-bottom: 2px solid #ecf0f1;
     padding-bottom: 0.5rem;
 }
+/* Tabela */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width:100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+/* Formulário e fieldset */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 1.2rem;
+    background-color: #fafafa;
+}
+
+legend {
+    font-weight: 600;
+    color: #34495e;
+    padding: 0 0.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #475569;
+}
