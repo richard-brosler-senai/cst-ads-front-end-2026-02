@@ -21,7 +21,10 @@ header {
     padding: 2rem 1rem;
     text-align: center;
 }
-
+footer{
+    text-align: center;
+    padding: 10px;
+}
 header h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
